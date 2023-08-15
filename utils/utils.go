@@ -1,4 +1,4 @@
-package main
+package utils
 
 import (
     "bufio"
@@ -57,7 +57,7 @@ func Find(space []string, target string) bool {
 
 /* TODO: Return an error object as well; offload error handling to caller`*/
 func GetWords() []string {
-    filename := "words"
+    filename := "../words"
     file, err := os.Open(filename)
     if err != nil {
 	log.Fatal(err)
